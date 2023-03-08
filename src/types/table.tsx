@@ -11,5 +11,9 @@ export interface ItemProps {
 export interface Headers {
   key: SortKeys;
   label: string
-  changeSort?: (key: SortKeys) => void;
+}
+
+export interface HeaderProps {
+  row: Headers;
+  changeSort: (key: SortKeys) => void;
 }

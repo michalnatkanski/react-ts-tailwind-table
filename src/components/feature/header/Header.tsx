@@ -1,12 +1,12 @@
 import React from 'react'
-import { Headers } from '../../../types/table';
+import { HeaderProps } from '../../../types/table';
 
-const Header: React.FC<Headers> = ({ key, label, changeSort }) => {
+const Header: React.FC<HeaderProps> = ({ row, changeSort }) => {
   return (
     <th
-      onClick={() => changeSort && changeSort(key)}
+      onClick={() => changeSort && changeSort(row.key)}
       className="text-white px-4 py-2 text-left cursor-pointer">
-      {label}
+      {row.label}
     </th>
   )
 }
