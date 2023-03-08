@@ -53,8 +53,8 @@ const Table = ({ data }: { data: Data }) => {
       <table className="table-auto w-full border-collapse">
         <thead>
           <tr className="bg-gray-800 border-b border-gray-600">
-            {headers.map((row) =>
-              <Header key={row.key} row={row} changeSort={changeSort} />
+            {headers.map(({ key, label }) =>
+              <Header key={key} label={label} changeSort={changeSort} />
             )}
           </tr>
         </thead>
