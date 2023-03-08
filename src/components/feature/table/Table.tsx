@@ -54,13 +54,20 @@ const Table = ({ data }: { data: Data }) => {
         <thead>
           <tr className="bg-gray-800 border-b border-gray-600">
             {headers.map(({ key, label }) =>
-              <Header key={key} label={label} changeSort={changeSort} />
+              <Header
+                key={key}
+                label={label}
+                changeSort={changeSort}
+              />
             )}
           </tr>
         </thead>
         <tbody>
           {sortedData().map((item) =>
-            <Item key={item.id} item={item} />
+            <Item
+              key={item.id}
+              item={item}
+            />
           )}
         </tbody>
       </table>
