@@ -48,7 +48,7 @@ const Table = ({ data }: { data: Data }) => {
         value={searchQuery}
         onChange={handleSearch}
         placeholder="Search items"
-        className="px-4 py-2 my-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+        className="px-4 py-2 mb-2 rounded-md focus:outline-none focus:decoration-current focus:ring-dark-200 shadow-lg"
       />
       <table className="table-auto w-full border-collapse">
         <thead>
